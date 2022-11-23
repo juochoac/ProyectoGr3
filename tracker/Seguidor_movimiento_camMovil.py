@@ -5,7 +5,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 type(cap)
 # Llamada al método
-fgbg = cv2.bgsegm.createBackgroundSubtractorMOG(history=5, nmixtures=5, backgroundRatio=0.7, noiseSigma=0)
+fgbg = cv2.bgsegm.createBackgroundSubtractorMOG(history=50, nmixtures=5, backgroundRatio=0.7, noiseSigma=0)
  
 # Deshabilitamos OpenCL, si no hacemos esto no funciona
 cv2.ocl.setUseOpenCL(False)
